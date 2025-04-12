@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Royal_Blue">#3366FF</color> //Primary
+    <color name="Indigo_Blue">#254EDB</color> // primary variant
+    <color name="Slate_Gray">#6B7280</color> // text Secondary
+    <color name="Green">#10B981</color> // Accent
+    <color name="Yellow">#F59E0B</color> // Warning
+    <color name="Red">#EF4444</color> // Error
+    <color name="Deep_Navy">#0F172A</color> // dark mode
+    <color name="Light_Gray_Blue">#E3EAF5</color>
 </resources>
