@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black">#1C1C1E</color>
+    <color name="white">#F9FBFF</color>
     <color name="Royal_Blue">#3366FF</color> //Primary
     <color name="Indigo_Blue">#254EDB</color> // primary variant
     <color name="Slate_Gray">#6B7280</color> // text Secondary
