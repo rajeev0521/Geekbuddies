@@ -12,18 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentHub"
         tools:targetApi="31">
-
+        <activity
+            android:name=".HomeFeedActivity"
+            android:exported="false" />
         <!-- SPLASH ACTIVITY now has the LAUNCHER intent filter -->
         <activity
             android:name=".splashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- MainActivity no longer has the launcher -->
+        </activity> <!-- MainActivity no longer has the launcher -->
         <activity
             android:name=".MainActivity"
             android:exported="true" />

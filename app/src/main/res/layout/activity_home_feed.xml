@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <!-- Top Navigation Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:title="Student Hub"
+        android:titleTextColor="@color/white"
+        android:background="@color/Indigo_Blue" />
+
+    <!-- Feed Filter Section -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_marginTop="56dp">
+
+        <Button
+            android:id="@+id/all_posts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/Royal_Blue"/>
+
+        <Button
+            android:id="@+id/following_posts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/Royal_Blue"/>
+
+        <Button
+            android:id="@+id/groups_posts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groups"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/Royal_Blue"/>
+    </LinearLayout>
+
+    <!-- Post Feed (RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/post_feed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+    <!-- Floating Action Button (FAB) for creating new post -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_create_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/student_hub_logo_with_bg"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/Green"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
