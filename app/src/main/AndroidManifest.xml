@@ -22,14 +22,21 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
+            android:name=".HomeFeedActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginPage"
+            android:exported="true" />
+        <!-- SPLASH ACTIVITY now has the LAUNCHER intent filter -->
+        <activity
+            android:name=".splashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> 
     </application>
 
 </manifest>
