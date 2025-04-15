@@ -1,15 +1,11 @@
 package com.rajeev0521.studenthub
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
 import android.widget.Toast
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.rajeev0521.studenthub.databinding.ActivitySignUpPageBinding
@@ -35,7 +31,7 @@ class sign_up_page : AppCompatActivity() {
             val sysId = binding.systemIdText.text.toString()
             val phoneNo = binding.phoneText.text.toString()
             val pass = binding.passwordText.text.toString()
-            val rePass = binding.rePasText.text.toString()
+            val rePass = binding.rePasswordText.text.toString()
 
             if(name.isNotEmpty() && email.isNotEmpty() && pass.isNotEmpty() && sysId.isNotEmpty() && rePass.isNotEmpty()){
                 if(pass.length<6 && rePass.length<6){
@@ -88,6 +84,17 @@ class sign_up_page : AppCompatActivity() {
                 binding.passwordToggle1.setImageResource(R.drawable.ic_eye_closed)
             }
             binding.passwordText.setSelection(binding.passwordText.text.length)
+        }
+        binding.passwordToggle2.setOnClickListener{
+            isPasswordVisible = !isPasswordVisible
+            if(isPasswordVisible){
+                binding.rePasswordText.inputType = InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+                binding.passwordToggle2.setImageResource(R.drawable.ic_eye_open)
+            }else{
+                binding.rePasswordText.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+                binding.passwordToggle2.setImageResource(R.drawable.ic_eye_closed)
+            }
+            binding.rePasswordText.setSelection(binding.rePasswordText.text.length)
         }
     }
 }

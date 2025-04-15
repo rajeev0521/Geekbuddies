@@ -48,15 +48,23 @@ dependencies {
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
-
+    // Firebase Auth + BoM
     implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
     implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.android.gms:play-services-auth:21.0.0")
+    // Google Sign-In
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    // FirebaseUI for GitHub login
+    implementation("com.firebaseui:firebase-ui-auth:8.0.2")
+    // Firebase Realtime Database
     implementation(libs.firebase.database.ktx)
-
+//    Linkedin login
+    implementation("com.github.scribejava:scribejava-apis:8.3.3")
+    implementation("com.github.scribejava:scribejava-core:8.3.3")
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
 
 

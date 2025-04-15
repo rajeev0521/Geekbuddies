@@ -62,7 +62,7 @@
         android:id="@+id/fab_create_post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@color/white"
+        android:src="@drawable/student_hub_logo_with_bg"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
