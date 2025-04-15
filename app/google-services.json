@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "489784963991",
+    "project_id": "student-hub-f0eb0",
+    "storage_bucket": "student-hub-f0eb0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489784963991:android:16dd3294455eb405b20ad2",
+        "android_client_info": {
+          "package_name": "com.rajeev0521.studenthub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZiSYN4jq2aGwcj-kCKwDbE2uG3IQzBuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

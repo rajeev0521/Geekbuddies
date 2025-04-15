@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/student_hub_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/student_hub_logo1"
         android:contentDescription="App Logo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -37,7 +37,7 @@ class splashActivity : AppCompatActivity() {
 
         // Creating Intent to move to main screen
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginPage::class.java))
             finish()
         },2500)
     }
